@@ -1,16 +1,17 @@
 ﻿using System;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class barang
+namespace latihan
 {
-	string nama, jenis;
-	int harga;
-	public barang(string nama, string jenis, int harga)
+	public class barang
 	{
-		this.nama = nama;
-		this.jenis = jenis;
-		this.harga = harga;
+		string nama, jenis;
+		int harga;
+		
+		public barang(string nama, string jenis, int harga)
+		{
+			this.nama = nama;
+			this.jenis = jenis;
+			this.harga = harga;
+		}
 	}
 }
