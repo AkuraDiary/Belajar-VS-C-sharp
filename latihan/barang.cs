@@ -8,14 +8,20 @@ namespace latihan
 {
 	public class barang
 	{
-		string nama, jenis;
-		int harga;
+        private string nama, jenis;
+        private int harga;
+
+
 		
 		public barang(string nama, string jenis, int harga)
 		{
-			this.nama = nama;
-			this.jenis = jenis;
-			this.harga = harga;
+			this.Nama = nama;
+			this.Jenis = jenis;
+			this.Harga = harga;
 		}
-	}
+
+        public string Nama { get => nama; set => nama = value; }
+        public string Jenis { get => jenis; set => jenis = value; }
+        public int Harga { get => harga; set => harga = value; }
+    }
 }
