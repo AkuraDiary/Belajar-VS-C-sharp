@@ -5,10 +5,12 @@
 /// </summary>
 public class barang
 {
-	public barang()
+	string nama, jenis;
+	int harga;
+	public barang(string nama, string jenis, int harga)
 	{
-		//
-		// TODO: Add constructor logic here
-		//
+		this.nama = nama;
+		this.jenis = jenis;
+		this.harga = harga;
 	}
 }
