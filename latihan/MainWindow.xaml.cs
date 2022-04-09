@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -21,7 +20,9 @@ namespace latihan
     public partial class MainWindow : Window
     {
 
-        List listBarang = new List();
+        List<barang> daftarBarang = new List<barang>();
+
+        
         public MainWindow()
         {
             InitializeComponent();
