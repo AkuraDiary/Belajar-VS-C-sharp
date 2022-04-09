@@ -20,9 +20,29 @@ namespace latihan
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        List listBarang = new List();
         public MainWindow()
         {
             InitializeComponent();
+            clearField();
+        }
+
+        private void clearField()
+        {
+            txt_nama.Clear();
+            txt_harga.Clear();
+            txt_jenis.Clear();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void daftar_barang_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
