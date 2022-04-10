@@ -14,9 +14,7 @@ using System.Windows.Shapes;
 
 namespace latihan
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
 
@@ -38,18 +36,20 @@ namespace latihan
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string namaBarang = txt_nama.Text;
-            string jenis = txt_jenis.Text;
-            int harga = int.Parse(txt_harga.Text);
-            barang item = new barang(namaBarang, jenis, harga);
-            daftarBarang.Add(item);
+            try
+            {
+                string namaBarang = txt_nama.Text;
+                string jenis = txt_jenis.Text;
+                int harga = int.Parse(txt_harga.Text);
+                barang item = new barang(namaBarang, jenis, harga);
+                daftarBarang.Add(item);
 
-            MessageBox.Show("added " + item.Nama);
-        }
-
-        private void daftar_barang_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+                MessageBox.Show("added " + item.Nama);
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Something gone wrong " + ex.ToString());
+            }
+            
         }
     }
 }
