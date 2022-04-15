@@ -34,6 +34,14 @@ namespace latihan
             txt_jenis.Clear();
         }
 
+        private void showItem()
+        {
+            foreach(var barang in daftarBarang)
+            {
+                output.Text += barang.Nama += "\n";
+            }
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -45,6 +53,8 @@ namespace latihan
                 daftarBarang.Add(item);
 
                 MessageBox.Show("added " + item.Nama);
+                clearField();
+                showItem();
             }catch(Exception ex)
             {
                 MessageBox.Show("Something gone wrong " + ex.ToString());
