@@ -32,6 +32,7 @@ namespace latihan
             txt_nama.Clear();
             txt_harga.Clear();
             txt_jenis.Clear();
+            txt_stock.Clear();
         }
 
         private void showItem()
@@ -49,7 +50,8 @@ namespace latihan
                 string namaBarang = txt_nama.Text;
                 string jenis = txt_jenis.Text;
                 int harga = int.Parse(txt_harga.Text);
-                barang item = new barang(namaBarang, jenis, harga);
+                int stock = int.Parse(txt_stock.Text);
+                barang item = new barang(namaBarang, jenis, harga, stock);
                 daftarBarang.Add(item);
 
                 MessageBox.Show("added " + item.Nama);
