@@ -61,5 +61,12 @@ namespace latihan
             }
             
         }
+
+        private void btn_clear_Click(object sender, RoutedEventArgs e)
+        {
+            daftarBarang.Clear();
+            clearField();
+            output.Clear();
+        }
     }
 }

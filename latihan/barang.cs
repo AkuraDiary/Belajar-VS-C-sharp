@@ -9,7 +9,7 @@ namespace latihan
 	public class barang
 	{
         private string nama, jenis;
-        private int harga;
+        private int harga, stock;
 
 
 		
