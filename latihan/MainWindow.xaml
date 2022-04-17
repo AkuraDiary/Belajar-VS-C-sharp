@@ -8,13 +8,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="321" Width="519">
     <Grid Margin="0,0,0,7">
-        <Button x:Name="btn_add" Content="Tambahkan" HorizontalAlignment="Left" Margin="47,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.83,-1.74" Width="79" Click="Button_Click"/>
+        <Button x:Name="btn_add" Content="Tambahkan" HorizontalAlignment="Left" Margin="47,245,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.83,-1.74" Width="79" Click="Button_Click"/>
         <TextBox x:Name="txt_nama" HorizontalAlignment="Left" Margin="47,66,0,0" TextWrapping="Wrap" Text="Nama barang" VerticalAlignment="Top" Width="153" />
         <TextBox x:Name="txt_jenis" HorizontalAlignment="Left" Margin="47,113,0,0" TextWrapping="Wrap" Text="Jenis Barang" VerticalAlignment="Top" Width="153" />
-        <TextBox x:Name="txt_harga" HorizontalAlignment="Left" Margin="47,162,0,0" TextWrapping="Wrap" Text="Harga Barang" VerticalAlignment="Top" Width="153" />
+        <TextBox x:Name="txt_harga" HorizontalAlignment="Left" Margin="47,154,0,0" TextWrapping="Wrap" Text="Harga Barang" VerticalAlignment="Top" Width="153" />
         <TextBox x:Name="output" HorizontalAlignment="Left" Margin="300,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" IsEnabled="False" Height="175" />
         <Label Content="List Barang" HorizontalAlignment="Left" Margin="300,35,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_clear" Content="Clear Item" HorizontalAlignment="Left" Margin="139,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.061,-0.991" Click="btn_clear_Click"/>
+        <Button x:Name="btn_clear" Content="Clear Item" HorizontalAlignment="Left" Margin="139,245,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.061,-0.991" Click="btn_clear_Click"/>
+        <TextBox x:Name="txt_stock" HorizontalAlignment="Left" Margin="47,199,0,0" TextWrapping="Wrap" Text="Stock Barang" VerticalAlignment="Top" Width="153" />
 
     </Grid>
 </Window>

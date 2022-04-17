@@ -24,7 +24,7 @@ namespace latihan
         public MainWindow()
         {
             InitializeComponent();
-            clearField();
+            //clearField();
         }
 
         private void clearField()
@@ -37,9 +37,16 @@ namespace latihan
 
         private void showItem()
         {
-            foreach(var barang in daftarBarang)
+            //output.Text += ;
+            foreach (var barang in daftarBarang)
+
             {
-                output.Text += barang.Nama += "\n";
+                output.Text += barang.Nama;
+                output.Text += "\t";
+                output.Text += barang.Harga;
+                output.Text += "\t";
+                output.Text += barang.Stock;
+                output.Text += "\n";
             }
         }
 
